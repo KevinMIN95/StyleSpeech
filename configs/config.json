@@ -1,0 +1,47 @@
+{
+    "dataset": "LibriTTS",
+    "n_speakers": 1124,
+
+    "text_cleaners": ["english_cleaners"],
+    
+    "sampling_rate": 16000,
+    "filter_length": 1024,
+    "hop_length": 256,
+    "win_length": 1024,
+    "max_wav_value": 32768.0,
+    "mel_fmin": 0.0,
+    "mel_fmax": 8000.0,
+    "n_mel_channels": 80,
+    "max_seq_len": 1000,
+
+    "encoder_layer": 4,
+    "encoder_head": 2,
+    "encoder_hidden": 256,
+    "decoder_layer": 4,
+    "decoder_head": 2,
+    "decoder_hidden": 256,
+    "fft_conv1d_filter_size": 1024,
+    "fft_conv1d_kernel_size": [9, 1],
+    "dropout": 0.1,
+
+    "variance_predictor_filter_size": 256,
+    "variance_predictor_kernel_size": 3,
+    "variance_embedding_kernel_size": 3,
+    "variance_dropout": 0.5,
+
+    "style_hidden": 128,
+    "style_head": 2,
+    "style_kernel_size": 5,
+    "style_vector_dim": 128,
+
+    "batch_size": 48,
+    "meta_batch_size": 20,
+    "max_iter": 200000,
+    "meta_iter": 40000,
+    "n_warm_up_step": 4000,
+    "grad_clip_thresh": 1.0,
+
+    "betas":[0.9, 0.98],
+    "eps":1e-9
+}
+
