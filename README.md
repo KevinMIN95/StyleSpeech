@@ -2,10 +2,10 @@
 
 **Recent Updates**
 --------
-[12/18/2022]
+[12/18/2021]
 :sparkles: Thanks Guan-Ting Lin for sharing the pre-trained multi-speaker MelGAN vocoder in 16kHz, and the checkpoint is now available in [Pre-trained 16k-MelGAN](https://huggingface.co/Guan-Ting/StyleSpeech-MelGAN-vocoder-16kHz). For the usage details, please follow the instructions in [MelGAN](https://github.com/descriptinc/melgan-neurips).
 
-[06/09/2022]
+[06/09/2021]
 Few modifications on the Variance Adaptor wich were found to improve the quality of the model . 1) We replace the architecture of variance emdedding from one Conv1D layer to two Conv1D layers followed by a linear layer. 2) We add a layernorm and phoneme-wise positional encoding. Please refer to [here](models/VarianceAdaptor.py).
 
 --------
