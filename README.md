@@ -59,7 +59,7 @@ to resample audios to 16kHz and for some other preperations.
 
 Second, [Montreal Forced Aligner](https://montreal-forced-aligner.readthedocs.io/en/latest/) (MFA) is used to obtain the alignments between the utterances and the phoneme sequences.
 ```bash
-./montreal-forced-aligner/bin/mfa_align dataset/wav16/ lexicon/librispeech-lexicon.txt  english datset/TextGrid/ -j 10 -v
+./montreal-forced-aligner/bin/mfa_align dataset/wav16/ lexicon/librispeech-lexicon.txt  english dataset/TextGrid/ -j 10 -v
 ```
 
 Third, preprocess the dataset to prepare mel-spectrogram, duration, pitch and energy for fast training.
